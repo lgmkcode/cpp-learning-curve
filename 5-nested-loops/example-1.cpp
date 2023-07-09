@@ -3,17 +3,21 @@ using namespace std;
 
 int main(){
 
-for(int k=0; k<4;k++){
+cout << "Enter the size: ";
+int size;
+cin >> size;
 
-for(int j = 0;j<4;j++){
-    cout << " ";
-}
+for(int k=0; k<size;k++){
 
+    for(int j = 1;j<=k;j++){
+        cout << " ";
+    }
 
-for(int i = 4; i>=1;i--){
-    cout << "*" << endl;
-}
+    for(int i = k; i<size;i++){ //for(int i=1;i<=size-i+1;i++)
+        cout << "*";
+    }
 
+cout << "\n";
 }
 
 return 0;
