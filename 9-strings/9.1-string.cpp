@@ -2,6 +2,15 @@
 #include <cstring>
 using namespace std;
 
+int len(char *x){
+    int b= 0;
+    char y = x[0];
+    while(y != '\0'){
+        y = x[++b];
+    }
+return b;
+}
+
 int main(){
 
 const char *s = "evren"; // You will use cons(tant, sabit) or define the array as s[]
@@ -29,5 +38,13 @@ if(strcmp(c,s)==0){
 else{
     cout << "not equal" << endl;
 }
+
+cout << len(a) << endl;
+cout << strlen(a) << endl;
+
+char *x = (char *)malloc(sizeof(char)*5);
+strcpy(x,s); // deep copy
+cout << x << endl;
+
 return 0;
 }
