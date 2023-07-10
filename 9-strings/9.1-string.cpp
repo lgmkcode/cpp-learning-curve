@@ -13,7 +13,7 @@ return b;
 
 int main(){
 
-const char *s = "evren"; // You will use cons(tant, sabit) or define the array as s[]
+const char *s = "evren"; // You will use const(ant, sabit) or define the array as s[]
 cout << s << endl;
 cout << s[3] << endl;
 
