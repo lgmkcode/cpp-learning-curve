@@ -50,4 +50,6 @@ int main(){
     r1.setHeight(50);
     cout << "area:" << r1.area() << " perimeter:" << r1.perimeter() << endl;
     cout << "width:" << r1.getWidth() << " height:" << r1.getHeight() << endl;
+return 0;
 }
+
